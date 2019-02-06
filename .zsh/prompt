@@ -1,0 +1,8 @@
+autoload -Uz promptinit
+promptinit
+if [ -e /etc/gentoo-release ]; then
+	prompt gentoo
+else
+  PROMPT='%{$fg[green]%}%~%{$reset_color%}%# '
+fi
+
