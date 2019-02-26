@@ -3,6 +3,6 @@ promptinit
 if [ -e /etc/gentoo-release ]; then
 	prompt gentoo
 else
-  PROMPT='%{$fg[green]%}%~%{$reset_color%}%# '
+  PROMPT='%{$fg[green]%}%(4~|%-1~/…/%2~|%3~)%{$reset_color%}%# '
 fi
 
